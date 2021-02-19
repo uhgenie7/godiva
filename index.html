@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <script src="/godiva/js/custom.js" defer></script>
+
     <title>Godiva</title>
   </head>
   <body>
@@ -33,8 +35,8 @@
       <header class="header">
         <div class="header_top center">
           <div class="header_info">
-            <a href="#">매장안내</a>
-            <a href="#">멤버십</a>
+            <a href="#" class="header_link">매장안내</a>
+            <a href="#" class="header_link">멤버십</a>
           </div>
           <div class="header_info">
             <a href="#"
@@ -42,44 +44,148 @@
             /></a>
           </div>
           <div class="header_info">
-            <a href="#"><i class="fas fa-eye"></i></a>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            <a href="#">로그인</a>
-            <a href="#">회원가입</a>
+            <a href="#" class="header_link"><i class="fas fa-eye"></i></a>
+            <a href="#" class="header_link"
+              ><i class="fas fa-shopping-cart"></i
+            ></a>
+            <a href="#" class="header_link">로그인</a>
+            <a href="#" class="header_link">회원가입</a>
           </div>
         </div>
         <div class="header_gnb">
           <ul class="depth1">
             <li>
-              <a href="#">GODIVA MENU</a>
+              <a
+                href="#"
+                class="depth1_list"
+                onmouseover="openCity(event, 'London')"
+                >GODIVA MENU</a
+              >
               <div class="sub_menu">
-                <div class="depth2">
+                <div id="London" class="depth2">
                   <div class="depth2_info">
                     <div class="depth2_p">
-                      <strong>고디바</strong>
-                      <p>고디바 소개</p>
+                      <strong>GODIVA MENU</strong>
+                      <p>고디바 메뉴</p>
                     </div>
                     <div class="depth2_img">
                       <img src="/godiva/img/common/header_logo.png" alt="" />
                     </div>
                   </div>
-                  <div class="depth2_list">
-                    <ul>
-                      <li><a href="#">초콜릿</a></li>
-                      <li><a href="#">스낵&코코아</a></li>
-                      <li><a href="#">케이크</a></li>
-                      <li><a href="#">아이스크림</a></li>
-                      <li><a href="#">초콜렉사</a></li>
-                      <li><a href="#">커피&음료</a></li>
-                      <li><a href="#">디저트</a></li>
+                  <div class="depth2_listbox">
+                    <ul class="depth2_unorder">
+                      <li class="depth2_list">
+                        <a href="#">초콜릿 <span>Chocolate</span></a>
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#">스낵&코코아 <span>Snack&CoCoa</span></a>
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#">케이크 <span>Cake</span></a>
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#">아이스크림 <span>Ice Cream</span></a>
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#">초콜렉사 <span>Chocolixir</span></a>
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#"
+                          >커피&음료 <span>Cofffee & Beverage</span></a
+                        >
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#">디저트 <span>DESSERT</span></a>
+                      </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </li>
-            <li><a href="#">ONLINE EXCLUSIVE</a></li>
-            <li><a href="#">NEWS&EVENT</a></li>
-            <li><a href="#">ABOUT GODIVA</a></li>
+            <li>
+              <a
+                href="#"
+                class="depth1_list"
+                onmouseover="openCity(event, 'Paris')"
+                >ONLINE EXCLUSIVE</a
+              >
+              <div class="sub_menu">
+                <div id="Paris" class="depth2">
+                  <div class="depth2_info">
+                    <div class="depth2_p">
+                      <strong>ONLINE EXCLUSIVE</strong>
+                      <p>고디바 상품</p>
+                    </div>
+                    <div class="depth2_img">
+                      <img src="/godiva/img/common/header_logo.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="depth2_listbox">
+                    <ul class="depth2_unorder">
+                      <li class="depth2_list"><a href="#">상품</a></li>
+                      <li class="depth2_list"><a href="#">전체 상품</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="depth1_list"
+                onmouseover="openCity(event, 'Tokyo')"
+                >NEWS&EVENT</a
+              >
+              <div class="sub_menu">
+                <div id="Tokyo" class="depth2">
+                  <div class="depth2_info">
+                    <div class="depth2_p">
+                      <strong>NEWS&EVENT</strong>
+                      <p>새로운 소식&이벤트</p>
+                    </div>
+                    <div class="depth2_img">
+                      <img src="/godiva/img/common/header_logo.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="depth2_listbox">
+                    <ul class="depth2_unorder">
+                      <li class="depth2_list"><a href="#">미디어</a></li>
+                      <li class="depth2_list"><a href="#">프로모션</a></li>
+                      <li class="depth2_list"><a href="#">공지사항</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="depth1_list"
+                onmouseover="openCity(event, 'Korea')"
+                >ABOUT GODIVA</a
+              >
+              <div class="sub_menu">
+                <div id="Korea" class="depth2">
+                  <div class="depth2_info">
+                    <div class="depth2_p">
+                      <strong>ABOUT GODIVA</strong>
+                      <p>고디바</p>
+                    </div>
+                    <div class="depth2_img">
+                      <img src="/godiva/img/common/header_logo.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="depth2_listbox">
+                    <ul class="depth2_unorder">
+                      <li class="depth2_list">
+                        <a href="#">고디바 스토리</a>
+                      </li>
+                      <li class="depth2_list"><a href="#">고디바 매장</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
         <!-- <div class="header_bottom">
@@ -119,44 +225,110 @@
       <!-- 슬라이드 end -->
       <section class="godiva_event">
         <div class="godiva_title">
-          <h2>GODIVA MENU & EVENT</h2>
-          <h3>고디바의 메뉴와 이벤트</h3>
+          <h2 class="godiva_h2">GODIVA MENU & EVENT</h2>
+          <h3 class="godiva_h3">고디바의 메뉴와 이벤트</h3>
         </div>
         <div class="godiva_imgbox">
-          <div class="">
-            <img src="/godiva/img/event/event1.jpg" alt="" />
+          <div class="godiva_outline event1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox top">
+              <h2>고디바 회원만의 특별한 혜택</h2>
+              <h3>GODIVA MEMBERSHIP</h3>
+            </div>
           </div>
-          <div class="">
-            <img src="/godiva/img/event/event2.jpg" alt="" />
+          <div class="godiva_outline event1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox top">
+              <h2>초콜릿 딥트 스트로베리</h2>
+              <h3>DIPPED STRAWBERRY</h3>
+            </div>
           </div>
-          <div class="">
-            <img src="/godiva/img/event/event3.jpg" alt="" />
+          <div class="godiva_outline event1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox top">
+              <h2>티 타임 컬렉션</h2>
+              <h3>Tea Time Collection</h3>
+            </div>
           </div>
         </div>
         <div class="godiva_imgbox">
-          <div class="">
-            <img src="/godiva/img/event/event4.jpg" alt="" />
+          <div class="godiva_outline event2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox middle">
+              <a href="#"
+                ><h3>골드컬렉션</h3>
+                <i class="fas fa-angle-right"></i
+              ></a>
+            </div>
           </div>
-          <div class="">
-            <img src="/godiva/img/event/event5.jpg" alt="" />
+          <div class="godiva_outline event2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox middle">
+              <a href="#">
+                <h3>큐브 트뤼프</h3>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
           </div>
         </div>
         <div class="godiva_imgbox">
-          <div class="">
-            <img src="/godiva/img/event/event6.jpg" alt="" />
+          <div class="godiva_outline event3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox middle">
+              <a href="#">
+                <h3>디저트&커피</h3>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
           </div>
-          <div class="">
-            <img src="/godiva/img/event/event7.jpg" alt="" />
+          <div class="godiva_outline event3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox middle">
+              <a href="#">
+                <h3>아이스크림</h3>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
           </div>
-          <div class="">
-            <img src="/godiva/img/event/event8.jpg" alt="" />
+          <div class="godiva_outline event3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox middle">
+              <a href="#">
+                <h3>초콜렉사</h3>
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
       <section class="godiva_sns">
         <div class="godiva_title">
-          <h2>SHOW US HOW YOU SHARE THE LOVE #GODIVA</h2>
-          <h3>고디바의 사랑을 공유하세요</h3>
+          <h2 class="godiva_h2">SHOW US HOW YOU SHARE THE LOVE #GODIVA</h2>
+          <h3 class="godiva_h3">고디바의 사랑을 공유하세요</h3>
         </div>
         <div class="godiva_snsbox">
           <div class="container">
