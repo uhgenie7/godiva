@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- css -->
-    <link rel="stylesheet" href="/godiva/css/reset.css" />
-    <link rel="stylesheet" href="/godiva/css/style.css" />
-    <link rel="stylesheet" href="/godiva/css/media.css" />
     <!-- favicon -->
     <link
       rel="icon"
@@ -27,8 +23,12 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="/godiva/css/swiper.css" />
     <script src="/godiva/js/custom.js" defer></script>
-
+    <!-- css -->
+    <link rel="stylesheet" href="/godiva/css/reset.css" />
+    <link rel="stylesheet" href="/godiva/css/style.css" />
+    <link rel="stylesheet" href="/godiva/css/media.css" />
     <title>Godiva</title>
   </head>
   <body>
@@ -45,6 +45,8 @@
             /></a>
           </div>
           <div class="header_info">
+            <a href="#" class="header_link">로그인</a>
+            <a href="#" class="header_link">회원가입</a>
             <i class="fas fa-search"></i>
             <!-- 로그인 시 표시 -->
             <!-- <a href="#" class="header_link"><i class="fas fa-eye"></i></a>
@@ -52,8 +54,8 @@
               ><i class="fas fa-shopping-cart"></i
             ></a> -->
             <!-- 로그아웃시 표시 X -->
-            <a href="#" class="header_link">로그인</a>
-            <a href="#" class="header_link">회원가입</a>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
           </div>
         </div>
         <div class="header_gnb">
@@ -78,23 +80,37 @@
                   <div class="depth2_listbox">
                     <ul class="depth2_unorder">
                       <li class="depth2_list">
-                        <a href="#">초콜릿 <span>Chocolate</span></a>
-                      </li>
-                      <li class="depth2_list">
-                        <a href="#">스낵&코코아 <span>Snack&CoCoa</span></a>
-                      </li>
-                      <li class="depth2_list">
-                        <a href="#">케이크 <span>Cake</span></a>
-                      </li>
-                      <li class="depth2_list">
-                        <a href="#">아이스크림 <span>Ice Cream</span></a>
-                      </li>
-                      <li class="depth2_list">
-                        <a href="#">초콜렉사 <span>Chocolixir</span></a>
+                        <a href="#"
+                          >초콜릿 <span class="depth2_eng">Chocolate</span></a
+                        >
                       </li>
                       <li class="depth2_list">
                         <a href="#"
-                          >커피&음료 <span>Cofffee & Beverage</span></a
+                          >스낵&코코아
+                          <span class="depth2_eng">Snack&CoCoa</span></a
+                        >
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#"
+                          >케이크 <span class="depth2_eng">Cake</span></a
+                        >
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#"
+                          >아이스크림
+                          <span class="depth2_eng">Ice Cream</span></a
+                        >
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#"
+                          >초콜렉사
+                          <span class="depth2_eng">Chocolixir</span></a
+                        >
+                      </li>
+                      <li class="depth2_list">
+                        <a href="#"
+                          >커피&음료
+                          <span class="depth2_eng">Cofffee & Beverage</span></a
                         >
                       </li>
                       <li class="depth2_list">
@@ -175,14 +191,26 @@
               </div>
             </li>
           </ul>
-          <div class="header_info2">
-            <i class="fas fa-search"></i>
+          <!-- <div class="header_info2">
             <a href="#" class="header_link"
               ><i class="fas fa-user-circle"></i
             ></a>
             <a href="#" class="header_link"
               ><i class="fas fa-sign-in-alt"></i
             ></a>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+          </div> -->
+        </div>
+        <div class="header_nav">
+          <div class="header_navbox">
+            <ul>
+              <li class="active"><a href="#">GODIVA MENU</a></li>
+              <li><a href="#">ONLINE EXCLUSIVE</a></li>
+              <li><a href="#">NEW&EVENT</a></li>
+              <li><a href="#">ABOUT GODIVA</a></li>
+            </ul>
           </div>
         </div>
         <div class="header_bottom">
@@ -202,23 +230,31 @@
         </div>
       </header>
       <!-- 헤더 end -->
-      <section class="slider">
+      <section class="slider pc">
         <!-- Slider main container -->
         <div class="swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide1"></a>
+              <a href="#" class="swiper-slide1">
+                <img src="/godiva/img/common/slider1.jpg" alt="" />
+              </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide2"></a>
+              <a href="#" class="swiper-slide2">
+                <img src="/godiva/img/common/slider2.jpg" alt="" />
+              </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide3"></a>
+              <a href="#" class="swiper-slide3">
+                <img src="/godiva/img/common/slider3.jpg" alt="" />
+              </a>
             </div>
             <div class="swiper-slide">
-              <a href="#" class="swiper-slide4"></a>
+              <a href="#" class="swiper-slide4">
+                <img src="/godiva/img/common/slider4.jpg" alt="" />
+              </a>
             </div>
           </div>
           <!-- If we need pagination(페이지 내비게이션) -->
@@ -229,7 +265,43 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-      <!-- 슬라이드 end -->
+      <!-- 슬라이드 1 end -->
+      <section class="slider mobile">
+        <!-- Slider main container -->
+        <div class="swiper-container mobile">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper mobile">
+            <!-- Slides -->
+            <div class="swiper-slide mobile">
+              <a href="#" class="swiper-slide1">
+                <img src="/godiva/img/common/slider5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide mobile">
+              <a href="#" class="swiper-slide2">
+                <img src="/godiva/img/common/slider6.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide mobile">
+              <a href="#" class="swiper-slide3">
+                <img src="/godiva/img/common/slider7.jpg" alt="" />
+              </a>
+            </div>
+            <div class="swiper-slide mobile">
+              <a href="#" class="swiper-slide4">
+                <img src="/godiva/img/common/slider8.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- If we need pagination(페이지 내비게이션) -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons(좌우버튼 추가) -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- 슬라이드 2 end -->
       <section class="godiva_event">
         <div class="godiva_title">
           <h2 class="godiva_h2">GODIVA MENU & EVENT</h2>
@@ -242,7 +314,7 @@
             <span></span>
             <span></span>
             <div class="godiva_txtbox top">
-              <h2>고디바 회원만의 특별한 혜택</h2>
+              <h2>특별한 혜택</h2>
               <h3>GODIVA MEMBERSHIP</h3>
             </div>
           </div>
@@ -254,6 +326,16 @@
             <div class="godiva_txtbox top">
               <h2>초콜릿 딥트 스트로베리</h2>
               <h3>DIPPED STRAWBERRY</h3>
+            </div>
+          </div>
+          <div class="godiva_outline event1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="godiva_txtbox top">
+              <h2>티 타임 컬렉션</h2>
+              <h3>Tea Time Collection</h3>
             </div>
           </div>
           <div class="godiva_outline event1">
