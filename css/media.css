@@ -1,0 +1,25 @@
+@media screen and (max-width: 1400px) {
+  .center {
+    max-width: 90%;
+  }
+
+  .header_info2 {
+    width: auto;
+  }
+
+  .header_info2.show:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 780px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 480px) {
+}
