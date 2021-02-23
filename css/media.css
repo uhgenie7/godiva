@@ -1,4 +1,4 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1415px) {
   .center {
     max-width: 90%;
   }
@@ -10,9 +10,123 @@
   .header_info2.show:first-child {
     display: none;
   }
+
+  .header_gnb .sub_menu .depth2.on {
+    padding: 20px 10%;
+  }
+
+  .header_gnb .sub_menu .depth2_listbox.on {
+    padding-left: 20px;
+  }
+
+  .depth2_eng {
+    display: none;
+  }
+
+  /* godiva event section style */
+  .godiva_imgbox {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .godiva_outline.event1,
+  .godiva_outline.event2,
+  .godiva_outline.event3 {
+    margin: 0 10px 10px 0;
+  }
+
+  /* sns gird style */
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5px;
+  }
+
+  /* footer style */
+  .footer_top,
+  .footer_bottom {
+    width: 90%;
+  }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1240px) {
+  .header_gnb .sub_menu .depth2.on {
+    padding: 20px 10px;
+  }
+
+  .header_gnb .sub_menu .depth2_info .depth2_img {
+    display: none;
+  }
+
+  .header_gnb .depth1 a {
+    padding: 10px 30px;
+  }
+
+  /* slider style */
+  .slider.pc {
+    display: none;
+  }
+
+  .slider.mobile {
+    display: block;
+  }
+
+  /* footer style */
+  .godiva_footer {
+    padding: 0 10px;
+  }
+
+  .footer_top,
+  .footer_bottom {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  /* header style */
+  .header .header_link {
+    display: none;
+  }
+
+  .header_gnb {
+    display: none;
+  }
+
+  .center {
+    max-width: 100%;
+  }
+
+  .header_info .fa-bars,
+  .header_info .fa-search,
+  .header_info .fa-times {
+    font-size: 25px;
+  }
+
+  .header_info .fa-bars {
+    display: block;
+  }
+
+  .header_info2 .fas.fa-user-circle,
+  .header_info2 .fas.fa-sign-in-alt {
+    display: none;
+  }
+
+  /* section style */
+
+  section,
+  footer,
+  .slider {
+    top: 110px;
+  }
+
+  .slider.mobile {
+    top: 113px;
+  }
+
+  /* sns gird style */
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media screen and (max-width: 780px) {
