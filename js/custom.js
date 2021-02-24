@@ -1,104 +1,103 @@
-// depth2 = document.querySelectorAll(".depth2");
-// depth1List = document.querySelectorAll(".depth1_list");
-// depth2Info = document.querySelectorAll(".depth2_info");
-// depth2Listbox = document.querySelectorAll(".depth2_listbox");
+depth2 = document.querySelectorAll(".depth2");
+depth1List = document.querySelectorAll(".depth1_list");
+depth2Info = document.querySelectorAll(".depth2_info");
+depth2Listbox = document.querySelectorAll(".depth2_listbox");
 
-// depth1List[0].addEventListener("mouseover", function () {
-//   depth2[0].classList.add("on");
-//   depth2Info[0].classList.add("on");
-//   depth2Listbox[0].classList.add("on");
+depth1List[0].addEventListener("mouseover", function () {
+  depth2[0].classList.add("on");
+  depth2Info[0].classList.add("on");
+  depth2Listbox[0].classList.add("on");
 
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
+  depth2[1].classList.remove("on");
+  depth2Info[1].classList.remove("on");
+  depth2Listbox[1].classList.remove("on");
+  depth2[2].classList.remove("on");
+  depth2Info[2].classList.remove("on");
+  depth2Listbox[2].classList.remove("on");
+  depth2[3].classList.remove("on");
+  depth2Info[3].classList.remove("on");
+  depth2Listbox[3].classList.remove("on");
+});
 
-// depth1List[1].addEventListener("mouseover", function () {
-//   depth2[1].classList.add("on");
-//   depth2Info[1].classList.add("on");
-//   depth2Listbox[1].classList.add("on");
+depth1List[1].addEventListener("mouseover", function () {
+  depth2[1].classList.add("on");
+  depth2Info[1].classList.add("on");
+  depth2Listbox[1].classList.add("on");
 
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
-
-
-// depth1List[2].addEventListener("mouseover", function () {
-//   depth2[2].classList.add("on");
-//   depth2Info[2].classList.add("on");
-//   depth2Listbox[2].classList.add("on");
-
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
-
-// depth1List[3].addEventListener("mouseover", function () {
-//   depth2[3].classList.add("on");
-//   depth2Info[3].classList.add("on");
-//   depth2Listbox[3].classList.add("on");
-
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-// });
-
-// depth2[0].addEventListener("mouseleave", function () {
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-// })
+  depth2[0].classList.remove("on");
+  depth2Info[0].classList.remove("on");
+  depth2Listbox[0].classList.remove("on");
+  depth2[2].classList.remove("on");
+  depth2Info[2].classList.remove("on");
+  depth2Listbox[2].classList.remove("on");
+  depth2[3].classList.remove("on");
+  depth2Info[3].classList.remove("on");
+  depth2Listbox[3].classList.remove("on");
+});
 
 
-// depth2[1].addEventListener("mouseleave", function () {
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-// });
+depth1List[2].addEventListener("mouseover", function () {
+  depth2[2].classList.add("on");
+  depth2Info[2].classList.add("on");
+  depth2Listbox[2].classList.add("on");
 
-// depth2[2].addEventListener("mouseleave", function () {
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-// });
+  depth2[0].classList.remove("on");
+  depth2Info[0].classList.remove("on");
+  depth2Listbox[0].classList.remove("on");
+  depth2[1].classList.remove("on");
+  depth2Info[1].classList.remove("on");
+  depth2Listbox[1].classList.remove("on");
+  depth2[3].classList.remove("on");
+  depth2Info[3].classList.remove("on");
+  depth2Listbox[3].classList.remove("on");
+});
 
-// depth2[3].addEventListener("mouseleave", function () {
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
+depth1List[3].addEventListener("mouseover", function () {
+  depth2[3].classList.add("on");
+  depth2Info[3].classList.add("on");
+  depth2Listbox[3].classList.add("on");
+
+  depth2[0].classList.remove("on");
+  depth2Info[0].classList.remove("on");
+  depth2Listbox[0].classList.remove("on");
+  depth2[1].classList.remove("on");
+  depth2Info[1].classList.remove("on");
+  depth2Listbox[1].classList.remove("on");
+  depth2[2].classList.remove("on");
+  depth2Info[2].classList.remove("on");
+  depth2Listbox[2].classList.remove("on");
+});
+
+depth2[0].addEventListener("mouseleave", function () {
+  depth2[0].classList.remove("on");
+  depth2Info[0].classList.remove("on");
+  depth2Listbox[0].classList.remove("on");
+})
+
+
+depth2[1].addEventListener("mouseleave", function () {
+  depth2[1].classList.remove("on");
+  depth2Info[1].classList.remove("on");
+  depth2Listbox[1].classList.remove("on");
+});
+
+depth2[2].addEventListener("mouseleave", function () {
+  depth2[2].classList.remove("on");
+  depth2Info[2].classList.remove("on");
+  depth2Listbox[2].classList.remove("on");
+});
+
+depth2[3].addEventListener("mouseleave", function () {
+  depth2[3].classList.remove("on");
+  depth2Info[3].classList.remove("on");
+  depth2Listbox[3].classList.remove("on");
+});
 
 
 // scroll event dom
 const headerTop = document.querySelector(".header_top");
-const headerInfo2 = document.querySelectorAll(".header_info2");
+// const headerInfo2 = document.querySelectorAll(".header_info2");
 const slider = document.querySelector(".slider");
-const headerHeight = headerTop.getBoundingClientRect().height;
 const sliderHeight = slider.getBoundingClientRect().height;
 const depth1 = document.querySelector(".depth1");
 const contentTop = document.querySelector(".content_top");
@@ -109,18 +108,6 @@ const faBars = document.querySelector(".fa-bars");
 document.addEventListener('scroll', scrollEvent);
 
 function scrollEvent() {
-    if (window.scrollY > headerHeight) {
-      // headerTop.style.display = "none"
-      // headerInfo2[0].classList.add("show");
-      // headerInfo2[1].classList.add("show");
-      // faBars.classList.add("show");
-  } else {
-      // headerTop.style.display = "flex";
-      // headerInfo2[0].classList.remove("show");
-      // headerInfo2[1].classList.remove("show");  
-      // faBars.classList.remove("show");
-  }
-
  if (window.scrollY > sliderHeight / 2) {
     contentTop.classList.add("show");
   } else {
@@ -146,18 +133,16 @@ function searchShow() {
 
 // nav bar click event 
 faBars.addEventListener("click", () => {
-  faTimes[0].classList.add("show");
-  faBars.classList.add("show");
+  faTimes[0].style.display="block";
+  faBars.style.display="none";
   headerNav.classList.add("show");
 });
 
 faTimes[0].addEventListener("click", () => {
-  faTimes[0].classList.remove("show");
-  faBars.classList.remove("show");
+  faBars.style.display="block";
+  faTimes[0].style.display="none";
   headerNav.classList.remove("show");
-
 });
-
 
 // search input close
 faTimes[1].addEventListener("click", () => {
@@ -175,3 +160,18 @@ contentTop.addEventListener("click", () => {
   });
 })
 
+
+// resize event
+function handleResize() {
+  const width = window.innerWidth;
+  if (width > 910) {
+    headerNav.classList.remove("show");
+    faBars.style.display="none";
+    faTimes[0].classList.remove("show");
+  } else {
+    faBars.style.display="block";
+    faTimes[0].style.display="none";
+  }
+}
+
+window.addEventListener("resize", handleResize);
