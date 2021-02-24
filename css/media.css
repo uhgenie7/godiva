@@ -285,9 +285,43 @@
 }
 
 @media screen and (max-width: 480px) {
+  .header_nav {
+    width: 70%;
+  }
+
+  .header_navlogin {
+    padding: 10px;
+  }
+
+  .header_navimg {
+    width: 100%;
+    height: 70px;
+  }
+
   .godiva_h2 {
     font-size: 1.5rem;
   }
+
+  /* slider style */
+  .slider.mobile p {
+    font-size: 15px;
+    padding: 0 30px;
+  }
+
+  .swiper-button-prev {
+    left: 5px;
+  }
+
+  .swiper-button-next {
+    right: 5px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  /* godiva evnet style */
+
   .godiva_event {
     padding: 10px 0;
   }
@@ -310,6 +344,7 @@
     display: none;
   }
 
+  /* godiva grid style */
   .container {
     padding: 0px;
     margin-bottom: 10px;
