@@ -24,9 +24,7 @@
   }
 
   /* godiva event section style */
-  .godiva_imgbox {
-    flex-wrap: wrap;
-    justify-content: center;
+  .godiva_imgbox:nth-child(2) {
     width: 90%;
   }
 
@@ -71,6 +69,18 @@
     display: block;
   }
 
+  /* slide style */
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-size: 70% auto;
+  }
+
+  /* event style */
+
+  .godiva_txtbox.middle {
+    width: 150px;
+  }
+
   /* footer style */
   .godiva_footer {
     padding: 0 10px;
@@ -78,7 +88,7 @@
 
   .footer_top,
   .footer_bottom {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -99,16 +109,15 @@
   .header_info .fa-bars,
   .header_info .fa-search,
   .header_info .fa-times {
-    font-size: 25px;
+    font-size: 30px;
+  }
+
+  .header_info .fa-times {
+    display: none;
   }
 
   .header_info .fa-bars {
     display: block;
-  }
-
-  .header_info2 .fas.fa-user-circle,
-  .header_info2 .fas.fa-sign-in-alt {
-    display: none;
   }
 
   /* section style */
@@ -123,17 +132,186 @@
     top: 113px;
   }
 
+  /* event style */
+  .godiva_txtbox.middle {
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+  }
+
+  .godiva_imgbox {
+    display: block;
+    width: 100%;
+  }
+
+  .godiva_imgbox:nth-child(2),
+  .godiva_imgbox:nth-child(4) {
+    width: 80%;
+  }
+
+  .godiva_outline.event1,
+  .godiva_outline.event2,
+  .godiva_outline.event3 {
+    margin: 20px auto;
+    background-size: 100%;
+  }
+
+  .godiva_outline.event2 {
+    width: 80%;
+  }
+
+  .godiva_outline.event1:nth-child(1),
+  .godiva_outline.event1:nth-child(2),
+  .godiva_outline.event1:nth-child(3),
+  .godiva_outline.event1:nth-child(4),
+  .godiva_outline.event3:nth-child(1),
+  .godiva_outline.event3:nth-child(2),
+  .godiva_outline.event3:nth-child(3) {
+    background-size: 100%;
+  }
+
+  .godiva_h2 span {
+    display: none;
+  }
+
   /* sns gird style */
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* footer style */
+  .footer_topbox:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 780px) {
+  .godiva_h2 {
+    font-size: 1.7rem;
+  }
+
+  .godiva_h3 {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  /* footer style */
+  .footer_top {
+    flex-wrap: wrap;
+  }
+
+  .godiva_logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer_topbox,
+  .footer_bottom {
+    text-align: center;
+  }
+
+  .footer_topbox:last-child {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  /* slide style */
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-size: 50% auto;
+  }
+
+  .slider.mobile p {
+    font-size: 20px;
+  }
+
+  /* header nav style */
+  .header_navbox a {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px;
+  }
+  .header_navlogin a strong {
+    font-size: 20px;
+  }
+
+  /* title style */
+  .godiva_title {
+    padding: 30px 0;
+  }
+
+  /* event style */
+  .godiva_outline.event1:nth-child(1),
+  .godiva_outline.event1:nth-child(2),
+  .godiva_outline.event1:nth-child(3),
+  .godiva_outline.event1:nth-child(4) {
+    background-position: center;
+  }
+
+  .godiva_outline.event3:nth-child(1),
+  .godiva_outline.event3:nth-child(2),
+  .godiva_outline.event3:nth-child(3) {
+    background-size: 120%;
+  }
+
+  .godiva_imgbox,
+  .container {
+    margin: auto;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* footer style */
+  .footer_topbox {
+    width: 50%;
+  }
+
+  .footer_topbox:nth-child(4) {
+    display: none;
+  }
+
+  .footer_bottom {
+    font-size: 13px;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
+  .godiva_h2 {
+    font-size: 1.5rem;
+  }
+  .godiva_event {
+    padding: 10px 0;
+  }
+  .godiva_title {
+    padding: 15px 0 0 0;
+  }
+  .godiva_outline.event1:nth-child(1),
+  .godiva_outline.event1:nth-child(2),
+  .godiva_outline.event1:nth-child(3),
+  .godiva_outline.event1:nth-child(4) {
+    background-position: top;
+  }
+
+  .godiva_snsbox,
+  .godiva_sns {
+    margin: 20px 0 0px 0;
+  }
+
+  .godiva_outline.event3 {
+    display: none;
+  }
+
+  .container {
+    padding: 0px;
+    margin-bottom: 10px;
+  }
 }
