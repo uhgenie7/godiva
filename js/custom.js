@@ -28,105 +28,6 @@ for (let i = 0; i < depth2.length; i++) {
 }
 
 
-// depth1List[0].addEventListener("mouseover", function () {
-//   depth2[0].classList.add("on");
-//   depth2Info[0].classList.add("on");
-//   depth2Listbox[0].classList.add("on");
-
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
-
-// depth1List[1].addEventListener("mouseover", function () {
-//   depth2[1].classList.add("on");
-//   depth2Info[1].classList.add("on");
-//   depth2Listbox[1].classList.add("on");
-
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
-
-
-// depth1List[2].addEventListener("mouseover", function () {
-//   depth2[2].classList.add("on");
-//   depth2Info[2].classList.add("on");
-//   depth2Listbox[2].classList.add("on");
-
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
-
-// depth1List[3].addEventListener("mouseover", function () {
-//   depth2[3].classList.add("on");
-//   depth2Info[3].classList.add("on");
-//   depth2Listbox[3].classList.add("on");
-
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-// });
-
-
-
-// for (let i = 0; i < depth1List.length; i++) {
-//   depth2[i].addEventListener("mouseleave", removeOn);
-// }
-
-
-
-// depth2[0].addEventListener("mouseleave", function () {
-//   depth2[0].classList.remove("on");
-//   depth2Info[0].classList.remove("on");
-//   depth2Listbox[0].classList.remove("on");
-// })
-
-
-// depth2[1].addEventListener("mouseleave", function () {
-//   depth2[1].classList.remove("on");
-//   depth2Info[1].classList.remove("on");
-//   depth2Listbox[1].classList.remove("on");
-// });
-
-// depth2[2].addEventListener("mouseleave", function () {
-//   depth2[2].classList.remove("on");
-//   depth2Info[2].classList.remove("on");
-//   depth2Listbox[2].classList.remove("on");
-// });
-
-// depth2[3].addEventListener("mouseleave", function () {
-//   depth2[3].classList.remove("on");
-//   depth2Info[3].classList.remove("on");
-//   depth2Listbox[3].classList.remove("on");
-// });
-
-
 // scroll event dom
 const headerTop = document.querySelector(".header_top");
 const slider = document.querySelector(".slider");
@@ -137,7 +38,6 @@ const faBars = document.querySelector(".fa-bars");
 
 
 // gnb & contentTop display show or none 
-
 function scrollEvent() {
   if (window.scrollY > sliderHeight / 2) {
     contentTop.classList.add("show");
