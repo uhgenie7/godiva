@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap");
+.wrap {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
 
 .center {
   width: 100%;
@@ -59,8 +64,12 @@ footer {
   padding: 10px;
 }
 
-.header_info .fa-bars,
-.header_info .fa-times {
+.header_info .fa-bars {
+  display: none;
+}
+
+.header_info .fa-times.left,
+.header_info .fa-times.right {
   display: none;
 }
 
@@ -253,13 +262,12 @@ footer {
   width: 50%;
   height: 100%;
   left: -100%;
-  z-index: 99;
   background: #cfb56a;
   background-repeat: no-repeat;
   top: 112px;
   display: block;
   transition: 1s;
-  z-index: 98;
+  z-index: 18;
 }
 
 .header_nav.show {
@@ -325,11 +333,12 @@ footer {
 .header_bottom {
   width: 100%;
   position: absolute;
-  border-top: 1px solid rgba(248, 244, 235, 0.3);
+  border-top: 1px solid white;
   background: #3b1a0f;
   padding: 20px 10px;
-  z-index: 15;
+  z-index: 20;
   display: none;
+  top: 112px;
 }
 
 .header_bottom.show {
@@ -431,6 +440,7 @@ footer {
 .swiper-button-next,
 .swiper-button-prev {
   padding: 20px;
+  outline: none;
 }
 
 .swiper-button-next {

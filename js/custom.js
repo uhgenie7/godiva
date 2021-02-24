@@ -96,7 +96,6 @@ depth2[3].addEventListener("mouseleave", function () {
 
 // scroll event dom
 const headerTop = document.querySelector(".header_top");
-// const headerInfo2 = document.querySelectorAll(".header_info2");
 const slider = document.querySelector(".slider");
 const sliderHeight = slider.getBoundingClientRect().height;
 const depth1 = document.querySelector(".depth1");
@@ -119,17 +118,24 @@ scrollEvent();
 
 
 // search icon click event
-const searchIcon = document.querySelectorAll(".fa-search");
+const searchIcon = document.querySelector(".fa-search");
 const headerBottom = document.querySelector(".header_bottom");
 const faTimes = document.querySelectorAll(".fa-times");
 const headerNav = document.querySelector(".header_nav");
 
-searchIcon[0].addEventListener("click", searchShow);
-searchIcon[1].addEventListener("click", searchShow);
+searchIcon.addEventListener("click", searchShow);
+faTimes[1].addEventListener("click", () => {
+  headerBottom.classList.remove("show");
+  faTimes[1].style.display = "none";
+  searchIcon.style.display = "block";
+});
 
 function searchShow() {
   headerBottom.classList.add("show");
+  faTimes[1].style.display = "block";
+  searchIcon.style.display = "none";
 }
+
 
 // nav bar click event 
 faBars.addEventListener("click", () => {
@@ -145,9 +151,9 @@ faTimes[0].addEventListener("click", () => {
 });
 
 // search input close
-faTimes[1].addEventListener("click", () => {
-headerBottom.classList.remove("show");
-});
+// faTimes[1].addEventListener("click", () => {
+// headerBottom.classList.remove("show");
+// });
 
 
 // content_top click event
