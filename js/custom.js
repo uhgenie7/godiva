@@ -138,7 +138,8 @@ function searchShow() {
 
 
 // nav bar click event 
-faBars.addEventListener("click", () => {
+faBars.addEventListener("click", (e) => {
+  e.stopPropagation();
   faTimes[0].style.display="block";
   faBars.style.display="none";
   headerNav.classList.add("show");
@@ -150,11 +151,11 @@ faTimes[0].addEventListener("click", () => {
   headerNav.classList.remove("show");
 });
 
-// search input close
-// faTimes[1].addEventListener("click", () => {
-// headerBottom.classList.remove("show");
-// });
-
+document.addEventListener("click", function () {
+    faBars.style.display="block";
+    faTimes[0].style.display="none";
+    headerNav.classList.remove("show");
+});
 
 // content_top click event
 const wrap = document.querySelector(".wrap");
