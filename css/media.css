@@ -94,6 +94,9 @@
 
 @media screen and (max-width: 910px) {
   /* header style */
+  .wrap {
+    padding-top: 113px;
+  }
   .header .header_link {
     display: none;
   }
@@ -118,18 +121,6 @@
 
   .header_info .fa-bars {
     display: block;
-  }
-
-  /* section style */
-
-  section,
-  footer,
-  .slider {
-    top: 110px;
-  }
-
-  .slider.mobile {
-    top: 113px;
   }
 
   /* event style */
@@ -289,13 +280,13 @@
     width: 70%;
   }
 
-  .header_navlogin {
-    padding: 10px;
-  }
-
   .header_navimg {
     width: 100%;
     height: 70px;
+  }
+
+  .header_bottom .search {
+    width: 80%;
   }
 
   .godiva_h2 {

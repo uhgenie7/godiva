@@ -4,6 +4,7 @@
   width: 100%;
   height: auto;
   overflow: hidden;
+  padding-top: 172px;
 }
 
 .center {
@@ -11,16 +12,6 @@
   height: auto;
   max-width: 70%;
   margin: auto;
-}
-
-section,
-footer {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 155px;
-  left: 0;
-  position: relative;
 }
 
 .header {
@@ -380,13 +371,6 @@ footer {
 }
 
 /* swiper css style */
-.slider {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 172px;
-  left: 0;
-}
 
 .slider.pc {
   top: 172px;
@@ -394,7 +378,6 @@ footer {
 
 .slider.mobile {
   display: none;
-  position: relative;
 }
 
 .slider.mobile p {
