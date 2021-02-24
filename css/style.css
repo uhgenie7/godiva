@@ -119,7 +119,7 @@
 }
 
 .header_gnb .depth1_list {
-  padding: 10px 0;
+  /* padding: 10px 0; */
 }
 
 .header_gnb .depth1_a {
@@ -131,9 +131,9 @@
 .header_gnb .depth1 a {
   color: white;
   display: inline-block;
-  padding: 10px 40px;
   font-weight: 400;
   transition: all 0.4s;
+  padding: 20px 30px;
 }
 
 .header_gnb .depth1_list a:hover {

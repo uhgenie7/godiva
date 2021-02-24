@@ -56,10 +56,6 @@
     display: none;
   }
 
-  .header_gnb .depth1 a {
-    padding: 10px 30px;
-  }
-
   /* slider style */
   .slider.pc {
     display: none;
