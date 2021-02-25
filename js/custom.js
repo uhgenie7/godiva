@@ -30,8 +30,8 @@ for (let i = 0; i < depth2.length; i++) {
 
 // scroll event dom
 const headerTop = document.querySelector(".header_top");
-const slider = document.querySelector(".slider");
-const sliderHeight = slider.getBoundingClientRect().height;
+const header = document.querySelector(".header");
+const headerHeight = header.getBoundingClientRect().height;
 const depth1 = document.querySelector(".depth1");
 const contentTop = document.querySelector(".content_top");
 const faBars = document.querySelector(".fa-bars");
@@ -39,7 +39,7 @@ const faBars = document.querySelector(".fa-bars");
 
 // gnb & contentTop display show or none 
 function scrollEvent() {
-  if (window.scrollY > sliderHeight / 2) {
+  if (window.scrollY > headerHeight / 2) {
     contentTop.classList.add("show");
   } else {
     contentTop.classList.remove("show")
@@ -118,3 +118,55 @@ function handleResize() {
 }
 
 window.addEventListener("resize", handleResize);
+
+// board js
+// 카테고리즈 클릭하면 자식 etarget에 active, article의 첫번째에 show
+const categories = document.querySelector(".categories");
+const cateArti = document.querySelectorAll(".cate_arti");
+let currentMenu;
+let currentContent;
+
+function activate(elem) {
+  let tabNum = elem.getAttribute('data-tabnum');
+  console.log(tabNum); // 0
+  elem.classList.add("active");
+  cateArti[tabNum].classList.add("show");
+  currentMenu = elem;
+  currentContent = cateArti[tabNum];
+}
+
+function inactivate(elem, elem2){
+  elem.classList.remove("active");
+  elem2.classList.remove("show");
+}
+
+function clickHandler(e) {
+  let target = e.target.closest('li');
+  if (currentMenu, currentContent) {
+    inactivate(currentMenu, currentContent);
+  }
+  activate(target);
+}
+
+
+// function clickHandler(e) {
+//   let target = e.target.closest('li');
+//   let tabNum = target.getAttribute('data-tabnum');
+
+//   if (currentMenu) {
+//     currentMenu.classList.remove("active");
+//     currentContent.classList.remove("show");
+//   } target.classList.add("active");
+//   cateArti[tabNum].classList.add("show");
+//   currentMenu = target;
+//   currentContent = cateArti[tabNum];
+// }
+
+
+categories.addEventListener("click", clickHandler);
+activate(document.querySelectorAll('.categories_btns')[0]);
+
+
+// currentMenu=cateArti[0].classList.add("show");
+// currentContent = cateArti[0];
+
