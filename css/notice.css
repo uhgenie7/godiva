@@ -1,0 +1,27 @@
+.news_section {
+  margin: 1.5rem auto;
+}
+
+.search_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: #3b1a0f;
+  padding: 20px;
+}
+
+.search_box input {
+  width: 70%;
+  height: 50px;
+  border: 0;
+  padding: 10px;
+  outline: none;
+}
+
+.search_box button {
+  width: 20%;
+  height: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
