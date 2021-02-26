@@ -808,6 +808,10 @@
   background: url(/godiva/img/title/title2.jpg) no-repeat center;
 }
 
+.main_img.news {
+  background: url(/godiva/img/title/title4.jpg) no-repeat center;
+}
+
 .main_img .main_title {
   text-align: center;
   font-size: 3.5rem;
