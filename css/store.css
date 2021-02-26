@@ -1,0 +1,59 @@
+.search_map {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #3b1a0f;
+  padding: 20px;
+}
+
+.search_map .select_boxes {
+  width: 50%;
+  display: flex;
+}
+
+.search_map .select_boxes .select_box {
+  width: 33.33%;
+  margin: 0 2px;
+}
+
+.search_map .select_boxes .select_box select {
+  width: 100%;
+  height: 50px;
+  border: 0;
+  outline: 0;
+  padding: 5px;
+}
+
+.search_map .search_boxes {
+  position: relative;
+  width: 50%;
+  height: 50px;
+}
+
+.search_map .search_box {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search_map .search_boxes .fa-search {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.search_map .search_boxes input {
+  width: 70%;
+  height: 50px;
+  border: 0;
+  padding: 10px;
+  outline: none;
+}
+
+.search_map .search_boxes button {
+  width: 20%;
+  height: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
