@@ -6,7 +6,7 @@
 
 
 <h1 align='middle'>
-  <a href='http://uhj1993.dothome.co.kr/db-portfolio/'>🍫GODIVA</a>
+  <a href='http://uhj1993.dothome.co.kr/godiva/'>🍫GODIVA</a>
 </h1>
 
 <p align='middle'>
