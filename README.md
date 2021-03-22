@@ -9,6 +9,12 @@
   <a href='http://uhj1993.dothome.co.kr/godiva/'>🍫GODIVA</a>
 </h1>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-323330?style=flat-square&logo=HTML5&logoColor=E34F26" height="24" />
+  <img src="https://img.shields.io/badge/CSS3-323330?style=flat-square&logo=CSS3&logoColor=1572B6" height="24" />
+  <img src="https://img.shields.io/badge/Javascript-323330?style=flat-square&logo=JavaScript&logoColor=f0db4f" height="24" />
+</p>
+
 <p align='middle'>
   <strong>GODIVA</strong>는 기존 웹사이트를 클론하여 리뉴얼해본 사이트입니다.
 </p>
