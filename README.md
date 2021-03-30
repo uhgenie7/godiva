@@ -16,7 +16,7 @@
 </p>
 
 <p align='middle'>
-  <strong>GODIVA</strong>는 기존 웹사이트를 클론하여 리뉴얼해본 사이트입니다.
+  <strong>GODIVA</strong>는 <a href="https://www.godiva.kr/" target="_blank">기존 웹사이트</a>를 클론하여 리뉴얼해본 사이트입니다.
 </p>
 
 ## 사이트
