@@ -40,6 +40,10 @@
   justify-content: center;
 }
 
+.header_info:nth-child(2) > strong {
+  text-indent: -999px;
+}
+
 .header_info:nth-child(3) {
   display: flex;
   justify-content: flex-end;
@@ -378,6 +382,11 @@
 
 .slider.mobile {
   display: none;
+}
+
+.slider h2 {
+  visibility: hidden;
+  position: absolute;
 }
 
 .slider.mobile p {
