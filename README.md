@@ -21,9 +21,9 @@
 
 ## 사이트
 
-- [메인페이지](http://uhj1993.dothome.co.kr/godiva/)
-- [서브페이지 01](http://uhj1993.dothome.co.kr/godiva/page/ourstory/history.html)
-- [서브페이지 02](http://uhj1993.dothome.co.kr/godiva/page/ourstory/store.html)
+- [메인페이지](http://devuhj.com/godiva/)
+- [서브페이지 01](http://devuhj.com/godiva/page/ourstory/history.html)
+- [서브페이지 02](http://devuhj.com/godiva/page/ourstory/store.html)
 
 ## 주요 특징
 - No Jquery
